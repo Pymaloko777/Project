@@ -124,7 +124,7 @@ int main()
 					scanf ("%f", &x); 
 					printf ("Enter the exponent: "); 
 					scanf ("%f", &y); 
-					printf ("%f ? %f = %0.3f", x, y, pow(x,y)); 
+					printf ("%f ^ %f = %0.3f", x, y, pow(x,y)); 
 					x=pow(x,y); 
 					break; 
 				} 
@@ -134,7 +134,7 @@ int main()
 					scanf ("%f", &x); 
 					printf ("Enter the exponent of root: "); 
 					scanf ("%f", &y); 
-					printf ("%f %f = %0.3f", y, x, pow(x,1/y)); 
+					printf ("%f ^ (1/%f) = %0.3f", x, y, pow(x,1/y)); 
 					x=pow(x,1/y); 
 					break;
 				}
@@ -143,7 +143,7 @@ int main()
 			scanf ("%d", &exit1); 
 			while (exit1 == 1) 
 			{ 
-				printf ("\n1.Amount\n2.Difference\n3.Multiplication\n4.Division\n5.Exponentiation\n6.Extraction of the root\nSelect the action and press Enter\n"; 
+				printf ("\n1.Amount\n2.Difference\n3.Multiplication\n4.Division\n5.Exponentiation\n6.Extraction of the root\nSelect the action and press Enter\n"); 
 				scanf ("%d", &Dei1); 
 				switch(Dei1) 
 				{ 
@@ -183,7 +183,7 @@ int main()
 					{ 
 						printf ("Enter the exponent: "); 
 						scanf ("%f", &y); 
-						printf ("%f ? %f = %f", x, y, pow(x,y)); 
+						printf ("%f ^ %f = %f", x, y, pow(x,y)); 
 						x=pow(x,y); 
 						break; 
 					} 
@@ -191,7 +191,7 @@ int main()
 					{ 
 						printf ("Enter the exponent of root: "); 
 						scanf ("%f", &y); 
-						printf ("%f %f = %f", y, x, pow(x,1/y)); 
+						printf ("%f ^ (1/%f) = %f", x, y, pow(x,1/y)); 
 						x=pow(x,1/y); 
 						break; 
 					} 
