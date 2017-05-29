@@ -80,27 +80,63 @@ int main()
 			{ 
 				case 1: 
 				{ 
-					
+					printf ("Enter the first summand: "); 
+					scanf ("%f", &x); 
+					printf ("Enter the second summand: "); 
+					scanf ("%f", &y); 
+					printf ("%f + %f = %f", x, y, Summa(x,y)); 
+					x=Summa(x,y); 
+					break; 
 				} 
 				case 2: 
 				{ 
-				
+					printf ("Enter the minuend: "); 
+					scanf ("%f", &x); 
+					printf ("Enter the subtrahend: "); 
+					scanf ("%f", &y); 
+					printf ("%f - %f = %f", x, y, Minus(x,y)); 
+					x=Minus(x,y); 
+					break; 
 				} 
 				case 3: 
 				{ 
-				
+					printf ("Enter the first multiplier: "); 
+					scanf ("%f", &x); 
+					printf ("Enter the second multiplier: "); 
+					scanf ("%f", &y); 
+					printf ("%f * %f = %0.3f", x, y, Product(x,y)); 
+					x=Product(x,y); 
+					break; 
 				} 
 				case 4: 
 				{ 
-				
+					printf ("Enter the dividend: "); 
+					scanf ("%f", &x); 
+					printf ("Enter the divider: "); 
+					scanf ("%f", &y); 
+					printf ("%f / %f = %0.3f", x, y, Divit(x,y)); 
+					x=Divit(x,y); 
+					break; 
 				} 
 				case 5: 
 				{ 
-				
+					printf ("Enter the number: "); 
+					scanf ("%f", &x); 
+					printf ("Enter the exponent: "); 
+					scanf ("%f", &y); 
+					printf ("%f ? %f = %0.3f", x, y, pow(x,y)); 
+					x=pow(x,y); 
+					break; 
 				} 
 				case 6: 
 				{ 
-				
+					printf ("Enter the number: "); 
+					scanf ("%f", &x); 
+					printf ("Enter the exponent of root: "); 
+					scanf ("%f", &y); 
+					printf ("%f %f = %0.3f", y, x, pow(x,1/y)); 
+					x=pow(x,1/y); 
+					break;
 				}
 			}
 		}
