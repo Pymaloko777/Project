@@ -139,6 +139,66 @@ int main()
 					break;
 				}
 			}
+			printf ("\nPress 1 to continue or 0 to exit"); 
+			scanf ("%d", &exit1); 
+			while (exit1 == 1) 
+			{ 
+				printf ("\n1.Amount\n2.Difference\n3.Multiplication\n4.Division\n5.Exponentiation\n6.Extraction of the root\nSelect the action and press Enter\n"; 
+				scanf ("%d", &Dei1); 
+				switch(Dei1) 
+				{ 
+					case 1: 
+					{ 
+						printf ("Enter the summand: "); 
+						scanf ("%f", &y); 
+						printf ("%f + %f = %f", x, y, Summa(x,y)); 
+						x=Summa(x,y); 
+						break; 
+					} 
+					case 2: 
+					{ 
+						printf ("Enter the subtrahend: "); 
+						scanf ("%f", &y); 
+						printf ("%f - %f = %f", x, y, Minus(x,y)); 
+						x=Minus(x,y); 
+						break; 
+					} 
+					case 3: 
+					{ 
+						printf ("Enter the multiplier: "); 
+						scanf ("%f", &y); 
+						printf ("%0.3f * %0.3f = %f", x, y, Product(x,y)); 
+						x=Product(x,y); 
+						break; 
+					} 
+					case 4: 
+					{ 
+						printf ("Enter the divider: "); 
+						scanf ("%f", &y); 
+						printf ("%f / %f = %f", x, y, Divit(x,y)); 
+						x=Divit(x,y); 
+						break; 
+					} 
+					case 5: 
+					{ 
+						printf ("Enter the exponent: "); 
+						scanf ("%f", &y); 
+						printf ("%f ? %f = %f", x, y, pow(x,y)); 
+						x=pow(x,y); 
+						break; 
+					} 
+					case 6: 
+					{ 
+						printf ("Enter the exponent of root: "); 
+						scanf ("%f", &y); 
+						printf ("%f %f = %f", y, x, pow(x,1/y)); 
+						x=pow(x,1/y); 
+						break; 
+					} 
+				} 
+				printf ("\nPress 1 to continue or 0 to exit"); 
+				scanf ("%d", &exit1); 
+			} 
 		}
 	}
 	return 0;
