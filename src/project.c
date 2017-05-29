@@ -72,6 +72,38 @@ int main()
 			}
 			break;
 		}
-		
+		case 2: 
+		{ 
+			printf ("\n1.Amount\n2.Difference\n3.Multiplication\n4.Division\n5.Exponentiation\n6.Extraction of the root\nSelect the action and press Enter\n"); 
+			scanf ("%d", &Dei1); 
+			switch(Dei1) 
+			{ 
+				case 1: 
+				{ 
+					
+				} 
+				case 2: 
+				{ 
+				
+				} 
+				case 3: 
+				{ 
+				
+				} 
+				case 4: 
+				{ 
+				
+				} 
+				case 5: 
+				{ 
+				
+				} 
+				case 6: 
+				{ 
+				
+				}
+			}
+		}
+	}
 	return 0;
 }
