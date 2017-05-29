@@ -43,3 +43,14 @@ build/test/func.o : src/func.h src/func.c
 	mkdir build/test -p
 	@echo "Making func.o"
 	@gcc -c src/func.c -o build/test/func.o $(CFLAGS)
+clean :
+	@echo "Cleaning files in build directory"
+	@rm -rf build/src/*.d build/test/*.d 
+	@rm -rf  build/src/*.o build/test/*.o
+	@echo "Cleaning binaries"
+	@rm -f bin/project bin/project-test
+	@echo "All files have been cleaned."
+
+
+
+-include build/*.d
