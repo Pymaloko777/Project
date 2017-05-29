@@ -200,6 +200,8 @@ int main()
 				scanf ("%d", &exit1); 
 			} 
 		}
+		case 3: 
+			break;
 	}
 	return 0;
 }
